@@ -26,7 +26,6 @@ const postSchema = new mongoose.Schema({
   user: {
     type: String,
     required: true,
-    unique: true,
   },
   password: {
     type: String,
@@ -38,7 +37,7 @@ const postSchema = new mongoose.Schema({
   },
   postAt: {
     type: String,
-    default: true,
+    default: postAt,
   },
 });
 
